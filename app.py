@@ -22,14 +22,23 @@ def suggest():
     temp = res['main']['temp']
     
     # Matching your aesthetic with specific labels
-    if temp < 45:
-        outfit = "editorial_cold.jpg"
-        msg = "Structural layers & muted tones."
-    elif temp < 75:
-        outfit = "editorial_mid.jpg"
+    if temp < 0:
+        outfit = "lo.png"
+        msg = "Grab a vibrant parka to brighten your cold day!"
+    elif temp < 32:
+        outfit = "midlo.png"
+        msg = "Settle into your cozy vibe with some dark colors :)"
+    elif temp < 50:
+        outfit = "mid.png"
+        msg = "Flowing linens & soft veranda blues."
+    elif temp < 68:
+        outfit = "midhi.png"
+        msg = "Flowing linens & soft veranda blues."
+    elif temp < 80:
+        outfit = "hi.png"
         msg = "Flowing linens & soft veranda blues."
     else:
-        outfit = "editorial_hot.jpg"
+        outfit = "hihi.png"
         msg = "Minimalist silk & cupid pink accents."
 
     return jsonify({
