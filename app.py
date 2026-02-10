@@ -30,16 +30,16 @@ def suggest():
         msg = "Settle into your cozy vibe with some dark colors :)"
     elif temp < 50:
         outfit = "mid.png"
-        msg = "Flowing linens & soft veranda blues."
+        msg = "Pair a pastel cardigan with some cute pants!"
     elif temp < 68:
         outfit = "midhi.png"
-        msg = "Flowing linens & soft veranda blues."
+        msg = "Throw on some gingham or overalls to embrace the nice day! "
     elif temp < 80:
         outfit = "hi.png"
-        msg = "Flowing linens & soft veranda blues."
+        msg = "Put on some shorts and beachy colors for this hot day :)"
     else:
         outfit = "hihi.png"
-        msg = "Minimalist silk & cupid pink accents."
+        msg = "Wear some athletic clothes and soak up the sun!"
 
     return jsonify({
         "temp": round(temp),
